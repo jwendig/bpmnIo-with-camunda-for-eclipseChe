@@ -1,0 +1,700 @@
+{
+  "name": "CamundaBpmn",
+  "uri": "http://some-company/schema/bpmn/qa",
+  "prefix": "camunda",
+  "xml": {
+    "tagAlias": "lowerCase"
+  },
+  "types": [
+    {
+      "name": "attr_assignee",
+      "extends": [
+        "bpmn:FlowNode"
+      ],
+      "properties": [
+        {
+          "name": "assignee",
+          "isAttr": true,
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "name": "attr_asyncAfter",
+      "extends": [
+        "bpmn:FlowNode"
+      ],
+      "properties": [
+        {
+          "name": "asyncAfter",
+          "isAttr": true,
+          "type": "Boolean",
+          "default": false
+        }
+      ]
+    },
+    {
+      "name": "attr_asyncBefore",
+      "extends": [
+        "bpmn:FlowNode"
+      ],
+      "properties": [
+        {
+          "name": "asyncBefore",
+          "isAttr": true,
+          "type": "Boolean",
+          "default": false
+        }
+      ]
+    },
+    {
+      "name": "attr_calledElementBinding",
+      "extends": [
+        "bpmn:FlowNode"
+      ],
+      "properties": [
+        {
+          "name": "calledElementBinding",
+          "isAttr": true,
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "name": "attr_calledElementVersion",
+      "extends": [
+        "bpmn:FlowNode"
+      ],
+      "properties": [
+        {
+          "name": "calledElementVersion",
+          "isAttr": true,
+          "type": "Integer"
+        }
+      ]
+    },
+    {
+      "name": "attr_candidateGroups",
+      "extends": [
+        "bpmn:FlowNode"
+      ],
+      "properties": [
+        {
+          "name": "candidateGroups",
+          "isAttr": true,
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "name": "attr_candidateStarterGroups",
+      "extends": [
+        "bpmn:FlowNode"
+      ],
+      "properties": [
+        {
+          "name": "candidateStarterGroups",
+          "isAttr": true,
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "name": "attr_candidateStarterUsers",
+      "extends": [
+        "bpmn:FlowNode"
+      ],
+      "properties": [
+        {
+          "name": "candidateStarterUsers",
+          "isAttr": true,
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "name": "attr_candidateUsers",
+      "extends": [
+        "bpmn:FlowNode"
+      ],
+      "properties": [
+        {
+          "name": "candidateUsers",
+          "isAttr": true,
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "name": "attr_caseBinding",
+      "extends": [
+        "bpmn:FlowNode"
+      ],
+      "properties": [
+        {
+          "name": "caseBinding",
+          "isAttr": true,
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "name": "attr_caseRef",
+      "extends": [
+        "bpmn:FlowNode"
+      ],
+      "properties": [
+        {
+          "name": "caseRef",
+          "isAttr": true,
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "name": "attr_caseVersion",
+      "extends": [
+        "bpmn:FlowNode"
+      ],
+      "properties": [
+        {
+          "name": "caseVersion",
+          "isAttr": true,
+          "type": "Integer"
+        }
+      ]
+    },
+    {
+      "name": "attr_class",
+      "extends": [
+        "bpmn:FlowNode"
+      ],
+      "properties": [
+        {
+          "name": "class",
+          "isAttr": true,
+          "type": "String",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "name": "attr_collection",
+      "extends": [
+        "bpmn:FlowNode"
+      ],
+      "properties": [
+        {
+          "name": "collection",
+          "isAttr": true,
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "name": "attr_collection",
+      "extends": [
+        "bpmn:FlowNode"
+      ],
+      "properties": [
+        {
+          "name": "collection",
+          "isAttr": true,
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "name": "attr_delegateExpression",
+      "extends": [
+        "bpmn:FlowNode"
+      ],
+      "properties": [
+        {
+          "name": "delegateExpression",
+          "isAttr": true,
+          "type": "String",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "name": "attr_dueDate",
+      "extends": [
+        "bpmn:FlowNode"
+      ],
+      "properties": [
+        {
+          "name": "dueDate",
+          "isAttr": true,
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "name": "attr_elementVariable",
+      "extends": [
+        "bpmn:FlowNode"
+      ],
+      "properties": [
+        {
+          "name": "elementVariable",
+          "isAttr": true,
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "name": "attr_exclusive",
+      "extends": [
+        "bpmn:FlowNode"
+      ],
+      "properties": [
+        {
+          "name": "exclusive",
+          "isAttr": true,
+          "type": "Boolean",
+          "default": true
+        }
+      ]
+    },
+    {
+      "name": "attr_expression",
+      "extends": [
+        "bpmn:FlowNode"
+      ],
+      "properties": [
+        {
+          "name": "expression",
+          "isAttr": true,
+          "type": "String",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "name": "attr_followUpDate",
+      "extends": [
+        "bpmn:FlowNode"
+      ],
+      "properties": [
+        {
+          "name": "followUpDate",
+          "isAttr": true,
+          "type": "String",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "name": "attr_formHandlerClass",
+      "extends": [
+        "bpmn:FlowNode"
+      ],
+      "properties": [
+        {
+          "name": "formHandlerClass",
+          "isAttr": true,
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "name": "attr_formKey",
+      "extends": [
+        "bpmn:FlowNode"
+      ],
+      "properties": [
+        {
+          "name": "formKey",
+          "isAttr": true,
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "name": "attr_initiator",
+      "extends": [
+        "bpmn:FlowNode"
+      ],
+      "properties": [
+        {
+          "name": "initiator",
+          "isAttr": true,
+          "type": "String",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "name": "attr_priority",
+      "extends": [
+        "bpmn:FlowNode"
+      ],
+      "properties": [
+        {
+          "name": "priority",
+          "isAttr": true,
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "name": "attr_resource",
+      "extends": [
+        "bpmn:FlowNode"
+      ],
+      "properties": [
+        {
+          "name": "resource",
+          "isAttr": true,
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "name": "attr_resultVariable",
+      "extends": [
+        "bpmn:FlowNode"
+      ],
+      "properties": [
+        {
+          "name": "resultVariable",
+          "isAttr": true,
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "name": "attr_type",
+      "extends": [
+        "bpmn:FlowNode"
+      ],
+      "properties": [
+        {
+          "name": "type",
+          "isAttr": true,
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "name": "ExecutionListener",
+      "superClass": [ "Element" ],
+      "properties": [
+      	{
+          "name": "event",
+          "isAttr": true,
+          "type": "String"
+        },
+        {
+          "name": "class",
+          "isAttr": true,
+          "type": "attr_class",
+          "default": ""
+        },
+        {
+          "name": "expression",
+          "isAttr": true,
+          "type": "attr_expression",
+          "default": ""
+        },
+        {
+          "name": "delegateExpression",
+          "isAttr": true,
+          "type": "attr_delegateExpression",
+          "default": ""
+        },
+	    {
+	      "name": "script",
+	      "type": "Script"
+	    }
+      ]
+    },
+    {
+        "name": "TaskListener",
+        "superClass": [ "Element" ],
+        "properties": [
+        	{
+            "name": "event",
+            "isAttr": true,
+            "type": "String"
+          },
+          {
+            "name": "class",
+            "isAttr": true,
+            "type": "attr_class",
+            "default": ""
+          },
+          {
+            "name": "expression",
+            "isAttr": true,
+            "type": "attr_expression",
+            "default": ""
+          },
+          {
+            "name": "delegateExpression",
+            "isAttr": true,
+            "type": "attr_delegateExpression",
+            "default": ""
+          },
+	      {
+	        "name": "script",
+	        "type": "Script"
+	      }
+        ]
+      },
+    {
+      "name": "Properties",
+      "superClass": [ "Element" ],
+      "properties": [
+      	{
+          "name": "values",
+          "isMany": true,
+          "type": "Property"
+        }
+      ]
+    },
+    {
+      "name": "Property",
+       "extends": [
+        "camunda:Properties"
+      ],
+      "properties": [
+      	{
+          "name": "id",
+          "isAttr": true,
+          "type": "String"
+        },
+        {
+          "name": "name",
+          "isAttr": true,
+          "type": "String"
+        },
+        {
+          "name": "value",
+          "isAttr": true,
+          "type": "String"
+        }        
+      ]
+    },
+    {
+      "name": "Validation",
+      "superClass": [ "Element" ],
+      "properties": [
+      	{
+          "name": "values",
+          "isMany": true,
+          "type": "Constraint"
+        }
+      ]
+    },
+    {
+      "name": "Constraint",
+       "extends": [
+        "camunda:Validation"
+      ],
+      "properties": [
+      	{
+          "name": "name",
+          "isAttr": true,
+          "type": "String"
+        },
+        {
+          "name": "config",
+          "isAttr": true,
+          "type": "String"
+        }        
+      ]
+    },
+    {
+      "name": "FormData",
+      "superClass": [ "Element" ],
+      "properties": [
+      	{
+          "name": "values",
+          "isMany": true,
+          "type": "FormField"
+        }
+      ]
+    },
+    {
+      "name": "FormField",
+       "extends": [
+        "camunda:FormData"
+      ],
+      "properties": [
+      	{
+          "name": "id",
+          "isAttr": true,
+          "type": "String"
+        },
+        {
+          "name": "label",
+          "isAttr": true,
+          "type": "String"
+        },
+        {
+          "name": "type",
+          "isAttr": true,
+          "type": "String"
+        },
+        {
+          "name": "defaultValue",
+          "isAttr": true,
+          "type": "String"
+        },
+        {
+          "name": "properties",
+          "isAttr": false,
+          "type": "Properties"
+        },
+        {
+          "name": "validations",
+          "isAttr": false,
+          "type": "Validation"
+        }        
+      ]
+    },
+    {
+      "name": "InputOutput",
+      "superClass": [ "Element" ],
+      "properties": [
+      	{
+          "name": "inputParameters",
+          "isMany": true,
+          "type": "InputParameter"
+        },
+        {
+          "name": "outputParameters",
+          "isMany": true,
+          "type": "OutputParameter"
+        }
+      ]
+    },
+    {
+      "name": "InputParameter",      
+      "properties": [
+      	{
+          "name": "name",
+          "isAttr": true,
+          "type": "String"
+        },
+        {
+          "name": "value",
+          "isBody": true,
+          "type": "String"
+        },
+        {
+          "name": "map",
+          "type": "Map"
+        },
+        {
+          "name": "list",
+          "type": "List"
+        },
+        {
+          "name": "script",
+          "type": "Script"
+        }
+      ]
+    },
+    {
+      "name": "OutputParameter",      
+      "properties": [
+      	{
+          "name": "name",
+          "isAttr": true,
+          "type": "String"
+        },
+        {
+          "name": "value",
+          "isBody": true,
+          "type": "String"
+        },
+        {
+          "name": "map",
+          "type": "Map"
+        }, 
+        {
+          "name": "list",
+          "type": "List"
+        },
+        {
+          "name": "script",
+          "type": "Script"
+        }
+      ]
+    },
+    {
+      "name": "Map",      
+      "properties": [
+      	{
+          "name": "values",          
+          "isMany": true,
+          "type": "Entry"
+        }    
+      ]
+    },
+    {
+      "name": "Entry",      
+      "properties": [
+      	{
+          "name": "key",
+          "isAttr": true,
+          "type": "String"
+        },
+        {
+          "name": "value",
+          "isBody": true,
+          "type": "String"
+        }     
+      ]
+    },
+    {
+      "name": "List",      
+      "properties": [
+      	{
+          "name": "values",          
+          "isMany": true,
+          "type": "Value"
+        }    
+      ]
+    },
+    {
+      "name": "Value",      
+      "properties": [      	
+        {
+          "name": "value",
+          "isBody": true,
+          "type": "String"
+        }     
+      ]
+    },
+    {
+      "name": "Script",      
+      "properties": [
+      	{
+          "name": "scriptFormat",          
+          "isAttr": true,
+          "type": "String",
+          "default": ""
+        },    
+        {
+          "name": "resource",          
+          "isAttr": true,
+          "type": "String",
+          "default": ""
+        },
+        {
+          "name": "script",          
+          "isBody": true,
+          "type": "String",
+          "default": ""
+        }
+      ]
+    },
+  ],
+  "emumerations": [],
+  "associations": []
+}
