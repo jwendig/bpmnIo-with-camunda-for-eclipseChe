@@ -693,6 +693,31 @@
         }
       ]
     },
+    {
+      "name": "Connection",
+      "superClass": [ "Element" ],
+      "properties": [
+      	{
+          "name": "connectorId",          
+          "type": "ConnectorId"          
+        },      	
+        {
+          "name": "inputParameters",          
+          "type": "InputOutput"
+        }
+      ]
+    },
+    {
+      "name": "ConnectorId",
+      "superClass": [ "Element" ],
+      "properties": [
+      	{
+          "name": "body",          
+          "isBody": true,
+          "type": "String"          
+        }
+      ]
+    },
   ],
   "emumerations": [],
   "associations": []
