@@ -8,9 +8,7 @@
   "types": [
     {
       "name": "FailedJobRetryTimeCycle",
-      "extends": [
-        "bpmn:FlowNode"
-      ],
+      "superClass": [ "Element" ],
       "properties": [
         {
           "name": "body",
