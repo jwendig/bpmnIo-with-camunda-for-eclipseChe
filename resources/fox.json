@@ -1,0 +1,26 @@
+{
+  "name": "FoxBpmn",
+  "uri": "http://www.camunda.com/fox",
+  "prefix": "fox",
+  "xml": {
+    "tagAlias": "lowerCase"
+  },
+  "types": [
+    {
+      "name": "FailedJobRetryTimeCycle",
+      "extends": [
+        "bpmn:FlowNode"
+      ],
+      "properties": [
+        {
+          "name": "body",
+          "isAttr": false,
+          "isBody": true,
+          "type": "String"
+        }
+      ]
+    }
+  ],
+  "emumerations": [],
+  "associations": []
+}

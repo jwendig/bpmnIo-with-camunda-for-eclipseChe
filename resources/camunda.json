@@ -1,6 +1,6 @@
 {
   "name": "CamundaBpmn",
-  "uri": "http://some-company/schema/bpmn/qa",
+  "uri": "http://activiti.org/bpmn",
   "prefix": "camunda",
   "xml": {
     "tagAlias": "lowerCase"
